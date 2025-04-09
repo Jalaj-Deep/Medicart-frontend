@@ -9,7 +9,7 @@ const PrivateRoute = () => {
     const {auth,setAuth} = useAuth();
     useEffect(()=>{
         const authCheck = async()=>{
-            const res = await axios.get("http://localhost:8000/ecomm/api/v1/auth/user-auth");
+            const res = await axios.get("https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/user-auth");
             if(res.data.ok)
             {
                 setOk(true);

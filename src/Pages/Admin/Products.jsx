@@ -22,7 +22,7 @@ const Products = () => {
   const getAllProducts = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8000/ecomm/api/v1/auth/getProduct"
+        "https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/getProduct"
       );
       if (res.data.success) {
         setProducts(res.data.Products);
@@ -54,7 +54,7 @@ const Products = () => {
               <a href="#">
                 <img
                   className="rounded-t-lg"
-                  src={`http://localhost:8000/ecomm/api/v1/auth/productPhoto/${product._id}`}
+                  src={`https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/productPhoto/${product._id}`}
                   alt={product.name}
                   style={{ height: '300px', width: '350px' }}
                 />

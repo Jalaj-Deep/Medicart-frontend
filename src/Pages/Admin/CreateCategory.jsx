@@ -24,7 +24,7 @@ const CreateCategory = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:8000/ecomm/api/v1/auth/categories",
+        "https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/categories",
         { name, description }
       );
       console.log(res.data);
@@ -46,7 +46,7 @@ const CreateCategory = () => {
   const getAllCategory = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8000/ecomm/api/v1/auth/allCategories"
+        "https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/allCategories"
       );
       if (res.data.sucess) {
         setCategories(res.data.categories);
@@ -71,7 +71,7 @@ const CreateCategory = () => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        `http://localhost:8000/ecomm/api/v1/auth/updateCategories/${selected._id}`,
+        `https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/updateCategories/${selected._id}`,
         { name: updatedName, description: updatedDescription }
       );
       if (res.data.success) {
@@ -94,7 +94,7 @@ const CreateCategory = () => {
   const handleDelete = async (id) => {
     try {
       const res = await axios.delete(
-        `http://localhost:8000/ecomm/api/v1/auth/deleteCategories/${id}`
+        `https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/deleteCategories/${id}`
       );
       if (res.data.success) {
         toast.success(res.data.message);

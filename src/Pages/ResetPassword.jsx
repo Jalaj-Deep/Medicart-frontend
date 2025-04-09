@@ -18,7 +18,7 @@ const ResetPassword = () => {
             if(password == cpassword)
             {
                 setErr(false);
-                const res = await axios.put(`http://localhost:8000/ecomm/api/v1/auth/resetPassword/${params.email}`,{password});
+                const res = await axios.put(`https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/resetPassword/${params.email}`,{password});
                 if (res.data.success) {
                     toast.success(res.data.message);
                     navigate("/log-in")

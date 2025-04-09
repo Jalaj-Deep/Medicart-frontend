@@ -12,7 +12,7 @@ const Dashboard = () => {
   const getOrder = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:8000/ecomm/api/v1/auth/orderDetail/${auth.user.email}`
+        `https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/orderDetail/${auth.user.email}`
       );
       if (res.data && res.data.success) {
         setOrders(res.data.order);
@@ -82,7 +82,7 @@ const Dashboard = () => {
                         <td className="flex justify-center items-center px-6 py-3 text-center border-2">
                           <img
                             className="  rounded-xl w-30 h-28 my-4"
-                            src={`http://localhost:8000/ecomm/api/v1/auth/productPhoto/${item.productId._id}`}
+                            src={`https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/productPhoto/${item.productId._id}`}
                           ></img>
                         </td>
                         <td className=" px-6 py-3 text-center border-2">

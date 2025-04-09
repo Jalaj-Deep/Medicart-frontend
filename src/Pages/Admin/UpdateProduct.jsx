@@ -26,7 +26,7 @@ const UpdateProduct = () => {
   const getAllCategory = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8000/ecomm/api/v1/auth/allCategories"
+        "https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/allCategories"
       );
       if (res.data.sucess) {
         setCategories(res.data.categories);
@@ -44,7 +44,7 @@ const UpdateProduct = () => {
   const getSingleProduct = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:8000/ecomm/api/v1/auth/singleProduct/${params.name}`
+        `https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/singleProduct/${params.name}`
       );
 
       setName(res.data.Product.name);
@@ -66,7 +66,7 @@ const UpdateProduct = () => {
   const deleteProduct = async () => {
     try {
       const res = await axios.delete(
-        `http://localhost:8000/ecomm/api/v1/auth/deleteProduct/${id}`
+        `https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/deleteProduct/${id}`
       );
       if (res.data.success) {
         toast.success(`${name} deleted Sucessfully`,{
@@ -95,7 +95,7 @@ const UpdateProduct = () => {
       productData.append("quantity", quantity);
       photo && productData.append("photo", photo);
 
-      const res = await axios.put(`http://localhost:8000/ecomm/api/v1/auth/updateProduct/${id}`,productData);
+      const res = await axios.put(`https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/updateProduct/${id}`,productData);
       if(res.data.success)
       {
         toast.success(res.data.message,{
@@ -125,7 +125,7 @@ const UpdateProduct = () => {
           </div>
           <div className="main lg:mt-20 lg:flex">
             <div className="logo lg:w-1/2 border-r-2 border-black">
-              <img src={`http://localhost:8000/ecomm/api/v1/auth/productPhoto/${id}`} alt="Logo" className=" h-full" />
+              <img src={`https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/productPhoto/${id}`} alt="Logo" className=" h-full" />
             </div>
             <div className="functions lg:w-1/2 h-full">
               {/* Update Button */}

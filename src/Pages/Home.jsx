@@ -23,7 +23,7 @@ const Home = () => {
   const getAllCategory = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8000/ecomm/api/v1/auth/allCategories"
+        "https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/allCategories"
       );
       if (res.data.sucess) {
         setCategories(res.data.categories);
@@ -68,7 +68,7 @@ const Home = () => {
   const filteredProduct = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:8000/ecomm/api/v1/auth/product-filter",
+        "https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/product-filter",
         { checked, radio }
       );
       // setProducts(res.data?.products);
@@ -143,7 +143,7 @@ const Home = () => {
                   id={product._id}
                   image={
                     product._id
-                      ? `http://localhost:8000/ecomm/api/v1/auth/productPhoto/${product._id}`
+                      ? `https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/productPhoto/${product._id}`
                       : ""
                   }
                   name={product.name}
