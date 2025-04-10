@@ -12,7 +12,7 @@ const Order = () => {
   const params = useParams();
 
   // const [email,setEmail] = useState("");
-  const [paid, setPaid] = useState(params.ref);
+  const [paid, setPaid] = useState(false);
   const [data, childData] = useState("Pay Now");
   
   const [mobile, setMobile] = useState();
@@ -173,6 +173,7 @@ const Order = () => {
 
     const razor = new window.Razorpay(options);
     razor.open();
+    setPaid(true);
   } catch (error) {
     console.error("Checkout error:", error);
   }
