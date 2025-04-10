@@ -33,7 +33,7 @@ const AdminDashboard = () => {
   // orders status display
   const handleStatusChange = async (orderId, newStatus) => {
     try {
-      const res = await axios.put(`https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/orders/${orderId}`, { status: newStatus });
+      const res = await axios.put(`https://medicart-backend.onrender.com/ecomm/api/v1/auth/orders/${orderId}`, { status: newStatus });
       if (res.data.success) {
         toast.success("Order status updated successfully");
         // You can also update the local state if needed
@@ -49,7 +49,7 @@ const AdminDashboard = () => {
 //Count Users
 const countUser = async () => {
   try {
-    const res = await axios.get("https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/countUsers");
+    const res = await axios.get("https://medicart-backend.onrender.com/ecomm/api/v1/auth/countUsers");
 
     if(res.data.success)
     {
@@ -65,7 +65,7 @@ const countUser = async () => {
 //Count Product
 const countProduct = async () => {
   try {
-    const res = await axios.get("https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/countProduct");
+    const res = await axios.get("https://medicart-backend.onrender.com/ecomm/api/v1/auth/countProduct");
 
     if(res.data.success)
     {
@@ -82,7 +82,7 @@ const countProduct = async () => {
 //Count Category
 const countCategory = async () => {
   try {
-    const res = await axios.get("https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/countCategory");
+    const res = await axios.get("https://medicart-backend.onrender.com/ecomm/api/v1/auth/countCategory");
 
     if(res.data.success)
     {
@@ -97,7 +97,7 @@ const countCategory = async () => {
 }
 const orders = async () => {
   try {
-    const res = await axios.get("https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/allOrders");
+    const res = await axios.get("https://medicart-backend.onrender.com/ecomm/api/v1/auth/allOrders");
     if (res.data.success) {
       setProducts(res.data.orders); 
       toast.success(res.data.message);

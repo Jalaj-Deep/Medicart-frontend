@@ -23,7 +23,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/signin",
+        "https://medicart-backend.onrender.com/ecomm/api/v1/auth/signin",
         {
           email: email,
           password: password,

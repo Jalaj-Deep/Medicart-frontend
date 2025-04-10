@@ -14,7 +14,7 @@ const Productdetails = () => {
 
 //Add to Cart Function
   const addToCart = () => {
-    const image = `https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/productPhoto/${product._id}`;
+    const image = `https://medicart-backend.onrender.com/ecomm/api/v1/auth/productPhoto/${product._id}`;
     const name = product.name;
     const price = product.price;
     const id = product._id;
@@ -33,7 +33,7 @@ const Productdetails = () => {
   const getProducts = async () => {
     try {
       const res = await axios.get(
-        `https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/singleProduct/${params.name}`
+        `https://medicart-backend.onrender.com/ecomm/api/v1/auth/singleProduct/${params.name}`
       );
       if (res.data.success) {
         setProduct(res.data?.Product);
@@ -51,7 +51,7 @@ const Productdetails = () => {
   const getSimilarProduct = async (pid, cid) => {
     try {
       const res = await axios.get(
-        `https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/similar-product/${pid}/${cid}`
+        `https://medicart-backend.onrender.com/ecomm/api/v1/auth/similar-product/${pid}/${cid}`
       );
       if (res.data.success) {
         setSimilarProduct(res.data.result);
@@ -66,7 +66,7 @@ const Productdetails = () => {
         <div className="rounded-lg shadow-lg lg:flex">
           <div className="lg:w-1/2 bg-gray-100">
             <img
-              src={`https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/productPhoto/${product._id}`}
+              src={`https://medicart-backend.onrender.com/ecomm/api/v1/auth/productPhoto/${product._id}`}
               alt={product.name}
               className="object-cover h-64 lg:h-full w-full"
             />
@@ -100,7 +100,7 @@ const Productdetails = () => {
                   key={product._id}
                   image={
                     product._id
-                      ? `https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/productPhoto/${product._id}`
+                      ? `https://medicart-backend.onrender.com/ecomm/api/v1/auth/productPhoto/${product._id}`
                       : ""
                   }
                   name={product.name}

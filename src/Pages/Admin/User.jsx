@@ -12,7 +12,7 @@ const User = () => {
   const getUsers = async () => {
     try {
       const res = await axios.get(
-        `https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/all-users`
+        `https://medicart-backend.onrender.com/ecomm/api/v1/auth/all-users`
       );
       if (res.data.success) {
         toast.success(res.data.message, {
@@ -36,7 +36,7 @@ const User = () => {
   const deleteUser = async (uid) => {
     try {
       const res = await axios.delete(
-        `https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/delete-user/${uid}`
+        `https://medicart-backend.onrender.com/ecomm/api/v1/auth/delete-user/${uid}`
       );
       if (res.data.success) {
         getUsers();

@@ -13,7 +13,7 @@ const Searchinput = () => {
     e.preventDefault();
     try {
       const response = await axios.get(
-        `https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/search/${values.keyword}`
+        `https://medicart-backend.onrender.com/ecomm/api/v1/auth/search/${values.keyword}`
       );
       if (response.data.success) {
         setValues({ ...values, results: response.data.result });

@@ -15,7 +15,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/signup",
+        "https://medicart-backend.onrender.com/ecomm/api/v1/auth/signup",
         {
           name: name,
           userid: userId,

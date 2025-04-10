@@ -91,7 +91,7 @@ const Order = () => {
       });
 
       const res = await axios.post(
-        "https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/createOrder",
+        "https://medicart-backend.onrender.com/ecomm/api/v1/auth/createOrder",
         {
           user: auth.user.email,
           mobile: mobile,
@@ -127,7 +127,7 @@ const Order = () => {
   ) => {
     try {
       const res = await axios.post(
-        `https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/orderConfirmation/${auth.user.email}`,
+        `https://medicart-backend.onrender.com/ecomm/api/v1/auth/orderConfirmation/${auth.user.email}`,
         { totalPrice, mobile, adress, city, landmark }
       );
       if (res.data.success) {
@@ -140,11 +140,11 @@ const Order = () => {
 
   const checkout = async () => {
   try {
-    const {data: { key },} = await axios.get("https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/getKey");
+    const {data: { key },} = await axios.get("https://medicart-backend.onrender.com/ecomm/api/v1/auth/getKey");
 
     const {
       data: { order },
-    } = await axios.post("https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/payment-checkout", {
+    } = await axios.post("https://medicart-backend.onrender.com/ecomm/api/v1/auth/payment-checkout", {
       totalPrice: totalPrice, // Ensure this is defined
     });
 
@@ -153,7 +153,7 @@ const Order = () => {
       amount: order.amount,
       name: "MED PLUS",
       order_id: order.id,
-      callback_url: "https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/paymentVerification", // Ensure correct endpoint
+      callback_url: "https://medicart-backend.onrender.com/ecomm/api/v1/auth/paymentVerification", // Ensure correct endpoint
       prefill: {
         email: auth?.user?.email || "", // Avoid errors if auth.user is undefined
       },
@@ -180,7 +180,7 @@ const Order = () => {
 
   const fetchAdress=async(req,res)=>{
     try{
-      const res=await axios.post("https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/orders/address",{ user: auth.user.email})
+      const res=await axios.post("https://medicart-backend.onrender.com/ecomm/api/v1/auth/orders/address",{ user: auth.user.email})
       if(res.data.success){
         const {pinCode,city,address,landmark,houseType,mobile}=res.data;
         setLandmark(landmark);

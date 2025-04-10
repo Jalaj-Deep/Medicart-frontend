@@ -24,7 +24,7 @@ const CreateProduct = () => {
   const getAllCategory = async () => {
     try {
       const res = await axios.get(
-        "https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/allCategories"
+        "https://medicart-backend.onrender.com/ecomm/api/v1/auth/allCategories"
       );
       if (res.data.sucess) {
         setCategories(res.data.categories);
@@ -55,7 +55,7 @@ const CreateProduct = () => {
       productData.append("category",category);
       productData.append("quantity",quantity);
       productData.append("photo",photo);
-      const res = await axios.post("https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/product",productData)
+      const res = await axios.post("https://medicart-backend.onrender.com/ecomm/api/v1/auth/product",productData)
       if(res.data.success)
       {
         toast.success(res.data.message)

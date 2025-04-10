@@ -9,7 +9,7 @@ const AdminRoute = () => {
     const {auth,setAuth} = useAuth();
     useEffect(()=>{
         const authCheck = async()=>{
-            const res = await axios.get("https://render.com/docs/web-services#port-binding/ecomm/api/v1/auth/admin-auth");
+            const res = await axios.get("https://medicart-backend.onrender.com/ecomm/api/v1/auth/admin-auth");
             if(res.data.ok)
             {
                 setOk(true);
