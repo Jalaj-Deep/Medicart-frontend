@@ -6,20 +6,21 @@ const Carousal = () => {
   const slides = [
     
     {
-      url: 'https://media-hosting.imagekit.io/065b25be40144c99/Screenshot%202025-04-13%20165808.png?Expires=1839151759&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=qb9cwtmncrXrO929P4jlSP1zXDyvUl0BfRhqKViW1pzKm36B1gq-weF6d6dkaIcevE9rpW7Y2zUFcl0NSgvP-jTd1lqwl3jsesvj5VmWB3q-CeZ6mj0xdHlFl4FJ-j8ZZCiKpSoTkOfkZpAinhPv2EdVJYeWxzS3GfOOu6evdgcbZuhMuKZkzAsMP9Jdv874SjBYjB9GRN43muocEvhrd7-ln1GNehJ8blQPPpOfkZpGdBVgOCqbqpd8Q14HshDzZiSgokPsQTwBtYPWuzr~g5KA~iklsH8U2yoM-7BX4oHX4a7hiISZbWc004-GNipkL3~FER1maKpspYcIaa3Ijg__',
+      url:'https://media-hosting.imagekit.io/10325c4d6d55421d/Screenshot%202025-04-13%20181544.png?Expires=1839156498&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=u4MJryRmRNQp8cXsT5h3qQwcmkTkdFvAyZw7D1QPPhIjVbKDkgSvp8kyfG6E2CGnH2b6EKHe3en2K6bH1tjAdnUQPQJq5vXFpByfiNcZJtMpBhKJDViOipA2q1Agl0NYMOAi2SvKl3K476e1dp3o8axHI4Nz~tpZ~5Mcqj5672cTYlfMk7xRN82m8b9X7VlwHXKfiw0z93xdM5tIDnu7kLLxMujweikYs0RccF6IgCc-v~ZQuRPoMRWx63Sh~lcZ2-mLauZnzSYnG1200~6ACkkJgmDyfKK7Q9mCOAZmdlRCYdtO2x2Wt7rkI6CHrX~GtQFsqmog5Rot~kGnbGMNCg__'
     },
     {
-      url: 'https://media-hosting.imagekit.io/8ce2339b50af48a2/Screenshot%202025-04-13%20165154.png?Expires=1839151333&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=c~2ROy0--W9si7gI5KLbZkc5ndtvkE2vBcLRHgrllZdJFsL8CRP2OK1jigubUQSbzJTPazjFajDIJoorsOzK0FG9qu~9gywEWPWR3qh5Px3vCTQ3JCl8Sqko2Qvt9PtAtKcP~wqukiqRVTewEjoC7FPfqeAnMy4bPRMLYK92PoWUdfpy1lmlVcptVdrEp-4wzR61fpcGmRgSdWnFtgTs6SPJx1Ry1Gm~Nxyw9EESNPz8tk3Di1DPQIz34YksU6IM1e7TbYB5Z6ELjVz6dGTRhRzgX~KSRLCqSHZ-n1q0QzN~s4OZ6j3f~ho5cqOBmzl3vO4pMJjhY~HGLYBhrtGNyA__',
+      url:'https://media-hosting.imagekit.io/1571869b20c34622/Screenshot%202025-04-13%20184208.png?Expires=1839157942&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=v-XrS8zSOWNA55g5t6Mr9CzUygxyzs4I3ou9nnN-Um0~CTSskSKrBjv~t1aqGGOd-Ah10DBtNHkLzNoWQDdwQhTMs2Zgi3xBvhcZXzxpOnyANowaDjyN20CsITnGKQjGbD-JlZuTtSeHPzJW~VhMQ9wAM7LxRKqcfJh~i-h8Tco6uAm9zC7FbX6r5ivsWxs-91CffFIXikAS2RMUc7xdIEK8pLB6TnVFQK60ec3SXf6iRM2NdHyPCCpysWGKD09Vf2HfA~TMRaensu4jzjmLpHglCuPBDb0pM8xaoFLyeM7eDbrM1XZDYA4dHwM-O0nwg04aS~H1JySfK2jv-kFeZg__'
     },
     {
-      url: 'https://media-hosting.imagekit.io/ecc5cc99eec04533/Screenshot%202025-04-13%20165408.png?Expires=1839151480&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=W~g-~dz8r9yWFsKGq0V8-XTsYi0JPbnoZ~X8PHmYgATgusUp~rqPuAkVxc2t6C13CL7y9xvRxkeO3ByrYaBsM4MORTzEuv8QOQMvPNN5pd6asBBbrPQkCi-VPxVT1Su1MfSGE3bYMf8HmWuDt5q-LKSjvZeQ4EwqVQaEgBKcD39ghwnC3ruDcPerppHzcMRr05IlqN1N9Nc8T9PZLIDh0wNtv6IGIz6PSRWIbR-2mtmmwj5I4Fu91u7ivdI4qXzbh5EUs85zhJu9rdGj8z4OwykLialFNp4p6h1Y6nkjElNLtD1-kX~es2pa1OsgWUYi~W0DawEfDKDczXU9btwYlA__',
+      url:'https://media-hosting.imagekit.io/0fe0c6be20154c18/Screenshot%202025-04-13%20182404.png?Expires=1839156849&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=RPoZfB7u4Vy88Ga6GGWg7cKOCxgOcWbQbZQWFp0i4g3IVBsesF7qiGRsOuzzNb6aNXWganwVdnb6AGpmcwv~MqVASiy-wUVcO1zVCBPYjwHshW1-r2LoH5Lfl~VhGxSr~3o4Npkq2d2SHir~wRkNmOiot-OujSouaMoJ25W8mIWWDq29e4TkEE7XXeYWckYQF6Roc3DY1Zy6rLkM441pppl0FLfr1ibyzjVXqkOYSPM0qqtcbSxXlZYcNF4JX~EdMfB9xVpw4SxgzzalG2Bg3Y07V-eDm28SsYYE-UioEVLecFEjrk~eM~lhbWSu-g203XkKMOdO0Pdf6dTU51eDxA__'
     },
     {
-      url: 'https://media-hosting.imagekit.io/cc04075a017f4177/Screenshot%202025-04-13%20165431.png?Expires=1839151574&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=oAMW7XG2XQ6Ad4bL1gWyMcP0-BArWOviX2ScJ1nSh3jgAazI7~ZqypNiHlo3EUvv89yHvOAaLJoM1NZF4~xuM11CTZkFbrRgvwmTqTTC2B~vTokcJV3QBNptEQc7mOw1dU0uYqvf7BoIY9-q2HFy1iCm~Uk7Xe7jhaSTc6q~AbnLtGnLf2mLt3wy4q4QfJQcV5Azq~ecY~NOIl6pt7ZK2wG~9oFUj-neAvX4WhDpH~27wgBPJOA-dw3ZYxYnlHhedIA-RcUbQW9Dzki2Dgy39nLJd1tG6GPX1SPH8-8H9Z~iqphejOaIAhz0LPPstrUINY77wBkqKNJoOqg8XK4jKw__',
+      url :"https://media-hosting.imagekit.io/9efc01dabed74403/Screenshot%202025-04-13%20182730.png?Expires=1839157055&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=s9clPYW6xl5BRc3mNqOLRP~wHRvukQJiZMGsbWYgVXWFGWnNBDUHjIhM1WvjHZk3D64KMT3entiJT7sCFtpJLdRzGgwnkartQ8OZ7Vt0nYmcW0KDhjQ2hOL0HX5P1fkixEQlfbuvAgyc5ouk4lJHVe-UxKrBk6cg~AyPYqQLQN5Av8BJJkevoJv-fscRqCjAPo8kt4KIM2I1WqKzD3M08hp4tbbj-IUuQ1iAydevnMGuZEybG2snfkAR-4ulVa1yLAMvgfEaBR4ssZwnoLuMnUOsuR1P3j7geVBjJxV8OI6eTTfy6JEzm2cYlfIyT0wAcNihLOiOEK7ZMsd5rP~l7A__"
     },
     {
-      url: 'https://media-hosting.imagekit.io/9fc3ee04ec4c42fb/Screenshot%202025-04-13%20165749.png?Expires=1839151714&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=g5wbh8aV6V32zRXrs8NNyP8WaYKhwD3YNfOwlExzmkal2POvXq6a1LbxYZnWD2B6c3TrUJwnPw1xNtMKPRpWAqFi1SUY9vCeYLC5lboTsc05QUijf3sW1WVDe2yABzeSsjSddpll6kfEljKFf7GvL17YWeUEIFZyyzLq1RE3zykGlshTZjrgJXJHzT-TXerN55h93WsILTfzS6ZULl-rPRncXs7TqQt9IsxMSBsgw3F-yh8ZrBJA56gIXKqYI1Roy9qKuJ3OFr9CyP6ME2xovzDjDb6zJnvJ~Fxxg5oxHRLuGxVQOS2S0aLn1n5IesIOtQf7exJUhRVTW7yyJzKwNA__',
+      url: 'https://media-hosting.imagekit.io/a33d1e32e16c4ca0/Screenshot%202025-04-13%20180644.png?Expires=1839155820&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=g9kKN6EQ6967cgHPZoDeUuGknT-TNCg7i6NTUAP8gGu6z4b8G1MZRrRVr89hojRZvs3nj-op2xyg~rFkLtuq8oResmDuVAtTf5bXtOErtbB8st7mgSsio3I6S~UFo792s468yhJMgzHMAyy4npvv0yOpwPGqiRkzxsjBnS3VEn9B7imyhYMnDaoi5f1qnT-wJx6hLV4DKoOPNJjCI9dyzetY8CANb5Dwu13cJ4-Y-Nf9pmd6aehB-oDBpOudgxEq7e0rhl2uGqAuB7d2UDBLn9JO~6eJ4uBiXmwr6JtXuxdky-AzOQBP1zePi6VrQE8C3rUtNMIRRMa3O9a87LZmrg__',
     },
+  
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
