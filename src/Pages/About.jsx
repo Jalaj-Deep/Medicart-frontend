@@ -5,9 +5,10 @@ const About = () => {
   return (
     <>
       <Layout>
-        <div className="isolate relative flex flex-col min-h-screen overflow-hidden bg-gray-900 justify-center items-start">
+      <div className="isolate relative flex flex-col min-h-screen overflow-hidden bg-gray-900">
+
           <img
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+            src="https://media-hosting.imagekit.io/dea342d6cf1343bf/Screenshot%202025-04-13%20191139.png?Expires=1839159717&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=m7m2YD20NU1LXWzQNCdIMGckMxoadDmv5z8CyuM~ehwhRstMPKoAcqsVJeA~L~dZrAQuW74mMCq7GtuxhaaypQA0WY1RxkqxNGg-ZGoI3NM3cnM3tAXItGMLI2i~UFwiidyvsGbA8KrixCkmr3HP~Dx~WQWgRGJBnkC6PWP3TA25ou-XRoVpb6Lxve5lp3mJBmUVF0LyQiUHPl5HNDs~TAKFen~7SrK6Aydgh0STQrqCWFrH2kGbtK~GFBUZykhvKn3-GKMUpmaYcp6iMk2TIFp20DmVK7nvofWqJH8Nt86oc84ccbwZGnNH8HR7VQYn98yCo-oAbR5RV7hLb5eaGg__"
             alt=""
             className="-z-10 md:object-center absolute inset-0 object-cover object-right w-full h-full"
           />
@@ -35,19 +36,19 @@ const About = () => {
               }}
             />
           </div>
-          <div className="max-w-7xl lg:px-8 flex-grow px-6 mx-auto">
-            <div className="max-w-2xl">
-              <h2 className="sm:text-6xl text-4xl font-bold tracking-tight text-white">
-                Work with us
-              </h2>
-              <p className="mt-6 text-lg leading-8 text-gray-300">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
-              </p>
-            </div>
-          </div>
-        </div>
+          <div className="max-w-7xl lg:px-8 flex-grow px-6 mx-auto py-20">
+  <div className="max-w-2xl text-left">
+    <h2 className="sm:text-6xl text-4xl font-bold text-black text-left">
+      About Us :
+    </h2>
+    <p className="mt-6 text-lg leading-8 text-black/80 text-left">
+      Medicart is here to make buying medicines easier, faster, and stress-free.
+      No more waiting in long lines at the pharmacy — just a few clicks, and your
+      medicines are delivered right to your door.
+    </p>
+  </div>
+</div>
+</div>
       </Layout>
     </>
   );

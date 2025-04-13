@@ -39,7 +39,7 @@ const Card = ({id,image,name,price}) => {
           <div className="flex items-center mt-2.5 mb-5">
             <div className="rtl:space-x-reverse flex items-center space-x-1">
               <svg
-                className="w-4 h-4 text-yellow-300"
+                className="w-4 h-4 text-pink-300"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"

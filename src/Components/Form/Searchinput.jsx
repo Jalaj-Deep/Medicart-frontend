@@ -28,20 +28,28 @@ const Searchinput = () => {
   };
 
   return (
-    <div className=" flex items-center p-2 bg-gray-100 rounded-lg lg:w-96">
-  <form className="flex" onSubmit={handleSubmit}>
-    <input
-      type="text"
-      placeholder="Search..."
-      className="focus:outline-none lg:w-80 bg-transparent border border-gray-300 rounded-l-md px-4 py-2"
-      value={values.keyword}
-      onChange={(e) => setValues({ ...values, keyword: e.target.value })}
-    />
-    <button type="submit" className="hover:text-gray-800 focus:outline-none bg-gray-200 hover:bg-gray-300 rounded-r-md px-4 py-2">
-      <FaSearch />
-    </button>
-  </form>
-</div>
+    <div className="flex items-center justify-center p-2 lg:w-96 w-full">
+    <form
+      onSubmit={handleSubmit}
+      className="flex w-full backdrop-blur-md bg-white/20 shadow-md rounded-full overflow-hidden border border-gray-300 focus-within:ring-2 focus-within:ring-green-500 transition-all"
+    >
+      <input
+        type="text"
+        placeholder="Search..."
+        className="w-full px-5 py-2 text-gray-800 placeholder-white-500 bg-transparent focus:outline-none"
+        value={values.keyword}
+        onChange={(e) => setValues({ ...values, keyword: e.target.value })}
+      />
+      <button
+        type="submit"
+        className="px-5 py-2 text-grey-900 bg-white hover:bg-green-100 transition-colors duration-200"
+        aria-label="Search"
+      >
+        <FaSearch />
+      </button>
+    </form>
+  </div>
+  
 
   );
 };
