@@ -74,7 +74,7 @@ const Header = () => {
       className={`w-full md:block md:w-auto ${isMenuOpen ? "block" : "hidden"}`}
       id="navbar-default"
     >
-      <ul className="md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gradient-to-r  from-green-900 via-green-800  to-green-700 border-grey-700 flex flex-col p-4 mt-4 font-medium border rounded-lg">
+      <ul className="md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 border-grey-700 flex flex-col p-4 mt-4 font-medium border rounded-lg">
         <li>
           <NavLink
             to="/"
