@@ -11,6 +11,7 @@ import { FaUserPlus } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
 import logo from "../../assets/logo.png"
 
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { auth, setAuth } = useAuth();
@@ -36,11 +37,11 @@ const Header = () => {
 
   return (
     <>
-      <nav className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600 border-gray-200">
+      <nav className="bg-gradient-to-r from-green-900 via-green-550  to-green-600 border-gray-200">
   <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
     <Link to="/" className="rtl:space-x-reverse flex items-center space-x-3">
-      <img src={logo} className="h-16 w-16 rounded-2xl" alt="Logo" />
-      <span className="whitespace-nowrap text-white self-center text-2xl font-semibold">
+      <img src={logo} className="h-16 w-16 rounded-2xl shadow-md border-2 border-pastel-pink" alt="Logo" />
+      <span className="whitespace-nowrap text-white self-center text-2xl  font-thin italic" >
         Medicart
       </span>
     </Link>
@@ -73,7 +74,7 @@ const Header = () => {
       className={`w-full md:block md:w-auto ${isMenuOpen ? "block" : "hidden"}`}
       id="navbar-default"
     >
-      <ul className="md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600 md:bg-transparent border-gray-700 flex flex-col p-4 mt-4 font-medium border rounded-lg">
+      <ul className="md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gradient-to-r  from-green-900 via-green-800  to-green-700 border-grey-700 flex flex-col p-4 mt-4 font-medium border rounded-lg">
         <li>
           <NavLink
             to="/"
