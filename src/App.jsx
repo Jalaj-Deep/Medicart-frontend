@@ -22,7 +22,6 @@ import Order from './Pages/Order'
 import ForgotPassword from './Pages/ForgotPassword'
 import ResetPassword from './Pages/ResetPassword'
 import PaymentSucess from './Pages/PaymentSucess'
-
 const App = () => {
   return (
     <>
@@ -52,6 +51,7 @@ const App = () => {
       <Route path='/order/:ref' element={<Order/>} />
       <Route path='/paymentsuccess' element={<PaymentSucess/>} />
       <Route path='/*' element={<Pagenotfound/>} />
+
     </Routes>
     </>
   )

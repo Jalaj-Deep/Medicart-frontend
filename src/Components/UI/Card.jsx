@@ -21,7 +21,7 @@ const Card = ({id,image,name,price}) => {
   };
   return (
     <>
-      <div className="bg-gray-800 border-gray-700  border rounded-lg shadow max-w-screen-sm lg:w-80 lg:ml-6 lg:mr- my-8 ">
+      <div className="bg-white-300 border-gray-700  border rounded-lg shadow max-w-screen-sm lg:w-80 lg:ml-6 lg:mr- my-8 ">
         <a href="#">
           <img
             className="p-8 rounded-t-lg"
