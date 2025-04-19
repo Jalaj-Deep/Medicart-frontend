@@ -32,7 +32,7 @@ const Card = ({id,image,name,price}) => {
         </a>
         <div className="px-5 pb-5">
           <a href="#">
-            <h5 className="text-white text-xl font-semibold tracking-tight">
+            <h5 className="text-grey-800 text-xl font-semibold tracking-tight">
               {name}
             </h5>
           </a>
@@ -88,7 +88,7 @@ const Card = ({id,image,name,price}) => {
               5.0
             </span>
           </div>
-          <div className=" text-white text-3xl font-bold text-left mb-6">
+          <div className=" text-black text-3xl font-bold text-left mb-6">
               Rs.{price}
             </div>
           <div className="flex items-center justify-between">
