@@ -20,7 +20,7 @@ const Search = () => {
                             <Card
                                 key={product._id}
                                 image={product._id
-                                    ? `http://localhost:8000/ecomm/api/v1/auth/productPhoto/${product._id}`
+                                    ? `https://medicart-backend.onrender.com/ecomm/api/v1/auth/productPhoto/${product._id}`
                                     : ""}
                                 name={product.name}
                                 price={product.price}
